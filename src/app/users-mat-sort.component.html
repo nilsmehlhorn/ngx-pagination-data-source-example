@@ -11,7 +11,7 @@
   </mat-form-field>
   <mat-spinner *ngIf="data.loading$ | async" diameter="32"></mat-spinner>
 </div>
-<table mat-table [dataSource]="data" matSort matSortActive="username" matSortStart="asc" matSortDisableClear class="mat-elevation-z1">
+<table mat-table [dataSource]="data" matSort (matSortChange)="sortBy($event)" matSortActive="username" matSortStart="asc" matSortDisableClear class="mat-elevation-z1">
 
    <ng-container matColumnDef="id">
     <th mat-header-cell *matHeaderCellDef mat-sort-header> ID </th>
