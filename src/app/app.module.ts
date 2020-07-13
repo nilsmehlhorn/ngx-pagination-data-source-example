@@ -4,6 +4,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 import {AppComponent} from './app.component';
+import {UsersMatSortComponent} from './users-mat-sort.component';
 import {UsersComponent} from './users.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator'
@@ -15,27 +16,32 @@ import {MatNativeDateModule, MatOptionModule} from '@angular/material/core'
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatSelectModule} from '@angular/material/select';
+import {MatSortModule} from "@angular/material/sort";
+import {MatTabsModule} from "@angular/material/tabs";
+import {UsersComponent} from "./users.component";
 
 @NgModule({
   imports: [
-    BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
-    BrowserAnimationsModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatFormFieldModule,
-    MatNativeDateModule,
-    MatInputModule,
-    MatIconModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
-    MatProgressSpinnerModule,
-    MatButtonToggleModule,
-    MatOptionModule,
-    MatSelectModule
+      BrowserModule,
+      FormsModule,
+      ReactiveFormsModule,
+      BrowserAnimationsModule,
+      MatTableModule,
+      MatPaginatorModule,
+      MatFormFieldModule,
+      MatInputModule,
+      MatIconModule,
+      MatDatepickerModule,
+      MatNativeDateModule,
+      MatProgressSpinnerModule,
+      MatButtonToggleModule,
+      MatOptionModule,
+      MatSelectModule,
+      MatSortModule,
+      MatTabsModule,
+      MatSelectModule
   ],
-  declarations: [ AppComponent, UsersComponent ],
+  declarations: [ AppComponent, UsersMatSortComponent, UsersComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
