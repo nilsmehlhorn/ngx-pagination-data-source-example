@@ -18,7 +18,6 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSortModule} from "@angular/material/sort";
 import {MatTabsModule} from "@angular/material/tabs";
-import {UsersComponent} from "./users.component";
 
 @NgModule({
   imports: [
