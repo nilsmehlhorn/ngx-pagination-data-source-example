@@ -5,9 +5,10 @@ import {User} from './user'
 import {MatSort, Sort} from "@angular/material/sort";
 
 @Component({
-  selector: 'users-mat-sort',
-  templateUrl: './users-mat-sort.component.html',
-  styleUrls: [`./users-mat-sort.component.scss`]
+    selector: 'users-mat-sort',
+    templateUrl: './users-mat-sort.component.html',
+    styleUrls: [`./users-mat-sort.component.scss`],
+    standalone: false
 })
 export class UsersMatSortComponent {
   @ViewChild(MatSort, {static: true}) sort: MatSort;

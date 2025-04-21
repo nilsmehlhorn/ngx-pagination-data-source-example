@@ -4,9 +4,10 @@ import {PaginationDataSource} from 'ngx-pagination-data-source'
 import {User} from './user'
 
 @Component({
-  selector: 'users',
-  templateUrl: './users.component.html',
-  styleUrls: [`./users.component.scss`]
+    selector: 'users',
+    templateUrl: './users.component.html',
+    styleUrls: [`./users.component.scss`],
+    standalone: false
 })
 export class UsersComponent {
   displayedColumns = ['id', 'username', 'email', 'registration']
